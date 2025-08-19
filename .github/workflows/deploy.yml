@@ -22,8 +22,12 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}  # Private key stored in GitHub secrets
           port: 22
           script: |
-            ls
-            
+            cd cicd 
+            git pull
+            npm install
+            npm run build 
+            npm run start
+
 
 
 
