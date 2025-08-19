@@ -22,3 +22,7 @@ jobs:
           key: ${{secrets.EC2_SSH_KEY }} # <-- Private key stored in GitHub secrets
           port: 22
           script: whoami
+
+
+
+          # heelo
