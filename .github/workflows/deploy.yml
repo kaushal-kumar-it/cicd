@@ -23,6 +23,8 @@ jobs:
           port: 22
           script: |
             cd cicd 
+            git init
+            git remote add origin https://github.com/kaushal-kumar-it/cicd
             git pull origin main
             npm install
             npm run build 
