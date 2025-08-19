@@ -24,3 +24,10 @@ jobs:
           script: |
             whoami
             ls -la
+
+
+
+
+
+
+            
