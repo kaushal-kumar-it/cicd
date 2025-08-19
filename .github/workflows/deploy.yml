@@ -25,6 +25,7 @@ jobs:
             cd /home/ubuntu
 
             # If project folder doesn’t exist, clone it
+            rm -rf cicd
             if [ ! -d "cicd" ]; then
               git clone -b main https://github.com/kaushal-kumar-it/cicd.git
             fi
@@ -38,4 +39,3 @@ jobs:
 
 
 
-            
