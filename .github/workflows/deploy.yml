@@ -13,12 +13,12 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@v2
-      - name: Execute remote SSH commands using password
+
+      - name: Execute remote SSH commands using private key
         uses: appleboy/ssh-action@v1
         with:
           host: 3.111.42.77
           username: ubuntu
-          password: ${{ secrets.EC2_SSH_KEY }}
+          key: ${{secrets.EC2_SSH_KEY }} # <-- Private key stored in GitHub secrets
           port: 22
           script: whoami
-      
